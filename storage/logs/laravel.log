@@ -1,0 +1,480 @@
+[2022-02-03 08:38:27] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-02-03 08:38:27] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\wamp64\\www\\p...', 1349)
+#1 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(571): include('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\wamp64\\www\\p...')
+#3 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 D:\wamp64\www\projects\projects\first_pass\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\\\wamp64\\\\www\\\\p...', 1349)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\wamp64\\\\www\\\\p...')
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\wamp64\\\\www\\\\p...')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\wamp64\\www\\projects\\projects\\first_pass\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-02-12 14:48:46] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-02-12 14:48:46] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\wamp64\\www\\p...', 1349)
+#1 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(571): include('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\wamp64\\www\\p...')
+#3 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 D:\wamp64\www\projects\projects\first_pass\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\\\wamp64\\\\www\\\\p...', 1349)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\wamp64\\\\www\\\\p...')
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\wamp64\\\\www\\\\p...')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\wamp64\\www\\projects\\projects\\first_pass\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-02-12 15:38:57] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-02-12 15:38:57] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\wamp64\\www\\p...', 1349)
+#1 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(571): include('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\wamp64\\www\\p...')
+#3 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 D:\wamp64\www\projects\projects\first_pass\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\\\wamp64\\\\www\\\\p...', 1349)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\wamp64\\\\www\\\\p...')
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\wamp64\\\\www\\\\p...')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\wamp64\\www\\projects\\projects\\first_pass\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-03-14 11:13:38] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-03-14 11:13:38] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\wamp64\\www\\p...', 1349)
+#1 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(571): include('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\wamp64\\www\\p...')
+#3 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 D:\wamp64\www\projects\projects\first_pass\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\\\wamp64\\\\www\\\\p...', 1349)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\wamp64\\\\www\\\\p...')
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\wamp64\\\\www\\\\p...')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\wamp64\\www\\projects\\projects\\first_pass\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-03-25 13:40:22] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-03-25 13:40:22] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\wamp64\\www\\p...', 1349)
+#1 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(571): include('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\wamp64\\www\\p...')
+#3 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 D:\wamp64\www\projects\projects\first_pass\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\\\wamp64\\\\www\\\\p...', 1349)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\wamp64\\\\www\\\\p...')
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\wamp64\\\\www\\\\p...')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\wamp64\\www\\projects\\projects\\first_pass\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-05-13 08:42:22] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-05-13 08:42:22] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\wamp64\\www\\p...', 1349)
+#1 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(571): include('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\wamp64\\www\\p...')
+#3 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 D:\wamp64\www\projects\projects\first_pass\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\\\wamp64\\\\www\\\\p...', 1349)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\wamp64\\\\www\\\\p...')
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\wamp64\\\\www\\\\p...')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\wamp64\\www\\projects\\projects\\first_pass\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-06-03 16:25:56] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-06-03 16:25:56] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\wamp64\\www\\p...', 1349)
+#1 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(571): include('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\wamp64\\www\\p...')
+#3 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 D:\wamp64\www\projects\projects\first_pass\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\\\wamp64\\\\www\\\\p...', 1349)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\wamp64\\\\www\\\\p...')
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\wamp64\\\\www\\\\p...')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\wamp64\\www\\projects\\projects\\first_pass\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-07-01 09:52:24] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-07-01 09:52:24] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\wamp64\\www\\p...', 1349)
+#1 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(571): include('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\wamp64\\www\\p...')
+#3 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 D:\wamp64\www\projects\projects\first_pass\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\\\wamp64\\\\www\\\\p...', 1349)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\wamp64\\\\www\\\\p...')
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\wamp64\\\\www\\\\p...')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\wamp64\\www\\projects\\projects\\first_pass\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-08-02 14:16:41] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-08-02 14:16:41] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\wamp64\\www\\p...', 1349)
+#1 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(571): include('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\wamp64\\www\\p...')
+#3 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 D:\wamp64\www\projects\projects\first_pass\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\\\wamp64\\\\www\\\\p...', 1349)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\wamp64\\\\www\\\\p...')
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\wamp64\\\\www\\\\p...')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\wamp64\\www\\projects\\projects\\first_pass\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-08-09 09:35:27] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-08-09 09:35:27] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\wamp64\\www\\p...', 1349)
+#1 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(571): include('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\projects\projects\first_pass\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\wamp64\\www\\p...')
+#3 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 D:\wamp64\www\projects\projects\first_pass\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 D:\wamp64\www\projects\projects\first_pass\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'D:\\\\wamp64\\\\www\\\\p...', 1349)
+#1 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\wamp64\\\\www\\\\p...')
+#2 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\wamp64\\\\www\\\\p...')
+#3 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\wamp64\\www\\projects\\projects\\first_pass\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at D:\\wamp64\\www\\projects\\projects\\first_pass\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
